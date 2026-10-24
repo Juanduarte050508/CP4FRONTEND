@@ -1,0 +1,32 @@
+.inicio {
+  text-align: center;
+  padding-top: 56px;
+}
+
+.inicio-ondas {
+  width: 172px;
+  margin: 0 auto 24px;
+}
+
+.inicio-subtitulo {
+  font-size: 20px;
+  color: #a1a1aa;
+}
+
+.inicio-botoes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+@media (min-width: 1024px) {
+  .inicio-ondas {
+    width: 412px;
+  }
+
+  .inicio-subtitulo {
+    font-size: 36px;
+  }
+}

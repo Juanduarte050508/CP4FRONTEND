@@ -1,0 +1,82 @@
+.funcionalidades {
+  padding: 56px 0;
+}
+
+.grade {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.card p {
+  color: #a1a1aa;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.icone {
+  width: 32px;
+  margin-bottom: 20px;
+}
+
+/* fotos so no desktop */
+.celular {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .grade {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .card {
+    height: 400px;
+    padding: 32px;
+  }
+
+  .card h3 {
+    font-size: 32px;
+  }
+
+  .card-largo {
+    grid-column: span 2;
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .card-texto {
+    padding: 32px;
+  }
+
+  .celular {
+    display: block;
+    width: 240px;
+    flex-shrink: 0;
+    margin-right: 32px;
+  }
+
+  .celular-baixo {
+    align-self: flex-end;
+    margin-bottom: 32px;
+  }
+
+  .celular-cima {
+    align-self: flex-start;
+    margin-top: 32px;
+  }
+
+  .celular-esq {
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}

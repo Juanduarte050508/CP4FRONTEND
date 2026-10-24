@@ -1,0 +1,70 @@
+/* Rodape */
+.rodape {
+  padding: 56px 0 40px;
+}
+
+.rodape-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.coluna h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f7b733;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.coluna li {
+  margin-bottom: 16px;
+}
+
+.coluna a, .copyright {
+  color: #a1a1aa;
+}
+
+.redes {
+  display: flex;
+  gap: 24px;
+}
+
+.redes img {
+  width: 24px;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .rodape-links {
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .rodape-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rodape-topo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rodape-links {
+    gap: 120px;
+    margin-top: 0;
+  }
+}

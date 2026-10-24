@@ -1,0 +1,39 @@
+/* conheça o app */
+
+.sobre {
+  margin-top: 140px;
+  padding-bottom: 56px;
+  background-color: #18181b;
+  border-radius: 50% 50% 0 0 / 50px 50px 0 0;
+  /* box-shadow: 0 -20px 60px rgba(252, 74, 26, 0.6); */
+  box-shadow: 0 -40px 80px rgba(252, 74, 26, 0.4);
+}
+
+.sobre-img {
+  max-width: 360px;
+  margin: -100px auto 32px;
+}
+
+.sobre-texto p {
+  color: #a1a1aa;
+}
+
+@media (min-width: 1024px) {
+  .sobre {
+    margin-top: 160px;
+    padding: 120px 0 80px;
+    border-radius: 50% 50% 0 0 / 140px 140px 0 0;
+  }
+
+  .sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .sobre-img {
+    order: 2;
+    width: 45%;
+    margin: 0;
+  }
+}
